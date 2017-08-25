@@ -1,0 +1,30 @@
+
+.table{
+    border:2px solid #eee;
+    border-collapse:collapse;
+    color:#fff;
+}
+.table1{
+    color:#fff;
+}
+.table,.table1:hover{
+    cursor:pointer;
+}
+.table td
+{
+    empty-cells : show;
+    border:1px solid #ccc;
+    width:150px;
+    box-sizing: border-box;
+}
+.table tr{
+    height:40px;
+
+}
+.table tr:nth-child(1){
+    text-align:center;
+background:#108ee9;
+}
+.wuhan tr:nth-child(1){
+    background:#aaa;    
+}

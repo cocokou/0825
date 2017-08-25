@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+var data ={
+	"header":{
+		"token":""
+	},
+	"data":{
+		"payload_type":"api",
+		"description":{
+			"type":"auth",
+			"id":"user_login_with_user_name",
+			"params":{
+				"user_name":"boa",
+				"pwhsh":"111111"
+			}
+		}
+	}
+};
+// var data = {
+// 	"header":{
+// 		"token": '71174ff6c5da312d1fab941af6e8269e0261fb3c6c0fef6de711a1247a52d687'
+// 		// "token": sessionStorage.getItem("token") || ''
+// 	},
+// 	"data":{
+// 		"payload_type":"api",
+// 		"description":{
+// 			"type":"auth",
+// 			"id":"dm_get_container",
+// 			"params":{
+// 				"org_id":1002
+// 			}	
+// 		}
+// 	}
+// };
+
+
+
+
+$.ajax({
+    url: "http://119.23.132.97/device-manager",
+    type: "POST",
+    // data: data,
+    cache: false,
+    contentType: "application/json",
+    dataType: "json",
+    data: JSON.stringify(data),
+    success: function (data) { 
+        console.log(data); }
+});
+</script>
+</body>
+</html>

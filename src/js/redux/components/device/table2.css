@@ -1,0 +1,28 @@
+td,
+th {
+  /* float: left; */
+  width: 100px;
+  height: 35px;
+  /* margin: 10px;
+        padding: 10px; */
+  border: 1px solid black;
+}
+
+.left {
+  width: 30%;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+/* .right {
+  width:70%;
+} */
+
+#t1 {
+  display: block;
+}
+
+#t2 td {
+  width: 50px;
+  border: none;
+  background-color: #ddd;
+}
